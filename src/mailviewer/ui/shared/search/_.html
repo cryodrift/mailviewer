@@ -1,0 +1,16 @@
+<div id="{{name}}" role="form">
+    <form action="{{ROUTE}}/{{query}}" data-loader="{{target}}" method="get" class="p-0 border rounded shadow-sm">
+        <fieldset class="row align-items-center g-0">
+            <legend class="d-none" id="{{name}}searchlabel">{{name}}</legend>
+            <div class="col">
+                <input id="{{name}}searchbox" name="{{name}}" type="text" data-bs-toggle="dropdown" class="form-control" value="{{value}}" placeholder="Enter {{name}} name...">
+                {{dropdown}}
+            </div>
+            <div class="col-auto">
+                <label for="{{name}}searchbox" class="col-form-label p-0">
+                    <button type="submit" class="btn btn-primary m-0">Search</button>
+                </label>
+            </div>
+        </fieldset>
+    </form>
+</div>
