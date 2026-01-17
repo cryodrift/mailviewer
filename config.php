@@ -3,10 +3,10 @@
 //declare(strict_types=1);
 
 /**
- * @env MAILVIEWER_POP3STORAGE="G_ROOTDIR.cryodrift/users/"
- * @env USER_STORAGEDIRS="G_ROOTDIR.cryodrift/users/"
+ * @env MAILVIEWER_POP3STORAGE=".cryodrift/users/"
+ * @env USER_STORAGEDIRS=".cryodrift/users/"
  * @env USER_USEAUTH=true
- * @env MAILVIEWER_CACHEDIR="G_ROOTDIR.cryodrift/cache/mailviewer/"
+ * @env MAILVIEWER_CACHEDIR=".cryodrift/cache/mailviewer/"
  */
 
 use cryodrift\fw\Core;
