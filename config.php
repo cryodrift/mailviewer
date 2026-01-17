@@ -19,7 +19,7 @@ $cfg = $ctx->config();
 
 if (Core::env('USER_USEAUTH')) {
     \cryodrift\user\Auth::addConfigs($ctx, [
-      'mail',
+      'mailviewer',
     ]);
 }
 
@@ -75,12 +75,12 @@ $cfg[\cryodrift\mailviewer\db\Repository::class] = [
 ];
 
 \cryodrift\fw\Router::addConfigs($ctx, [
-  'mail/cli' => \cryodrift\mailviewer\Cli::class,
+  'mailviewer/cli' => \cryodrift\mailviewer\Cli::class,
 ], \cryodrift\fw\Router::TYP_CLI);
 
 \cryodrift\fw\Router::addConfigs($ctx, [
-  'mail' => \cryodrift\mailviewer\Page::class,
-  'mail/api' => \cryodrift\mailviewer\Api::class,
+  'mailviewer' => \cryodrift\mailviewer\Page::class,
+  'mailviewer/api' => \cryodrift\mailviewer\Api::class,
 ], \cryodrift\fw\Router::TYP_WEB);
 
 \cryodrift\fw\FileHandler::addConfigs($ctx, [
