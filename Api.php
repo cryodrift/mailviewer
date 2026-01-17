@@ -23,10 +23,10 @@ class Api implements Handler
     use WebHandler;
 
 
-    public function __construct(protected Repository $db, protected Config $config)
+    public function __construct(protected Repository $db, protected Config $config, string $route)
     {
         $this->outHelperAttributes([
-            'ROUTE' => '/mail'
+            'ROUTE' => $route
           ]
         );
     }

@@ -32,6 +32,7 @@ $cfg[\cryodrift\mailviewer\Cache::class] = [
 
 $cfg[\cryodrift\mailviewer\Page::class] = \cryodrift\mailviewer\Api::class;
 $cfg[\cryodrift\mailviewer\Api::class] = [
+  'route' => '/mailviewer',
   'templatepath' => __DIR__ . '/ui/base/main.html',
   'title' => 'Mail',
   'description' => 'Personal e-Mail Viewer',
